@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contoh Form</title>
+    <link rel="stylesheet" href="123240264cssform.css" />
+</head>
+<body>
+        <main class="container">
+            <h1>Form Formulir</h1>
+
+
+        <form id="contohForm" action="update.php" method="post" novalidate>
+
+        <div class="form-row">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required />
+        </div>
+
+
+        <fieldset class="form-row">
+            <legend>Jenis Kelamin</legend>
+            <label>
+            <input type="radio" name="jk" value="laki" required />
+            Laki-laki
+            </label>
+            <label>
+            <input type="radio" name="jk" value="perempuan" />
+            Perempuan
+            </label>
+            <label>
+            <input type="radio" name="jk" value="lainnya" />
+            Lainnya
+            </label>
+        </fieldset>
+
+
+        <div class="form-row">
+            <label for="prodi">Program Studi</label>
+            <select id="prodi" name="prodi" required>
+            <option value="">-- Pilih program studi --</option>
+            <option value="ti">Teknik Informatika</option>
+            <option value="si">Sistem Informasi</option>
+            <option value="te">Teknik Elektro</option>
+            </select>
+        </div>
+
+
+        <fieldset class="form-row">
+            <legend>Minat (boleh pilih lebih dari satu)</legend>
+            <label><input type="checkbox" name="minat" value="ai" /> Kecerdasan Buatan</label>
+            <label><input type="checkbox" name="minat" value="web" /> Pengembangan Web</label>
+            <label><input type="checkbox" name="minat" value="iot" /> IoT</label>
+        </fieldset>
+
+
+        <div class="form-row">
+            <label for="catatan">Catatan / Pesan</label>
+            <textarea id="catatan" name="catatan" rows="5" placeholder="Tulis pesan..."></textarea>
+        </div>
+
+
+        <div class="form-row">
+            <a href="123240264aksi.html" class="btn">Submit</a>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+        </form>
+    </main>
+</body>
+</html>
+

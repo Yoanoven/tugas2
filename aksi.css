@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 12px 24px;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 16px;
+    font-weight: 500;
+}
+
+.navbar nav a.active {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #f8f9fc;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* ====== TABEL ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.kosong {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px;
+}
+.aksi {
+    display: flex;
+    gap: 6px; /* jarak antar tombol */
+}
+
+.aksi .btn {
+    flex: 1;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Tombol Tambah Anggota Baru */
+.btn-add {
+    display: inline-block;          /* Supaya bisa diatur padding dan margin */
+    padding: 10px 20px;             /* Jarak dalam tombol */
+    margin-top: 20px;               /* Jarak dari tabel */
+    background-color: #4CAF50;      /* Warna hijau */
+    color: white;                   /* Warna teks */
+    text-decoration: none;          /* Hilangkan underline */
+    border-radius: 8px;             /* Membuat sudut membulat */
+    font-weight: bold;              /* Tebalkan teks */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efek hover */
+.btn-add:hover {
+    background-color: #45a049;      /* Warna sedikit lebih gelap */
+    transform: scale(1.05);         /* Sedikit membesar saat hover */
+}
+
+/* Jika ingin tombol menonjol di mobile */
+@media (max-width: 600px) {
+    .btn-add {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.btn-edit { background-color: #4CAF50; }
+.btn-delete { background-color: #f44336; }
+
+.btn-edit:hover { background-color: #45a049; }
+.btn-delete:hover { background-color: #da190b; }
